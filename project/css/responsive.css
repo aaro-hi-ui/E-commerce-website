@@ -1,0 +1,126 @@
+/* Responsive Styles */
+
+/* Small devices (landscape phones, 640px and up) */
+@media (min-width: 640px) {
+    .hero-content h1 {
+        font-size: var(--text-5xl);
+    }
+
+    .hero-content {
+        margin-bottom: 0;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter-form .form-group {
+        flex-direction: row;
+    }
+
+    .newsletter-form button {
+        width: auto;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .search-container {
+        display: block;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .hero-section .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-8);
+        align-items: center;
+    }
+
+    .hero-content {
+        margin-bottom: 0;
+    }
+
+    .view-all {
+        display: block;
+    }
+
+    .mobile-view-all {
+        display: none;
+    }
+
+    .promo-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .trust-badges {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .newsletter-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Extra large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+    .container {
+        padding: 0 var(--space-6);
+    }
+
+    .hero-content h1 {
+        font-size: var(--text-5xl);
+    }
+
+    .hero-image {
+        height: 500px;
+    }
+
+    .promo-image {
+        height: 500px;
+    }
+}
